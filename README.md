@@ -1,3 +1,5 @@
 # Reactor Core
 
-Reactor Core 3.8.7 的常用 `Flux` 创建、变换、筛选和截取 API 适配，发布坐标为 `reactor:core:1`。`Flux<T>` 通过标准 `std.concurrent.Publisher<T>` 与使用 Reactive Streams 的框架互操作。
+[English](README.md) | [简体中文](README.zh-CN.md)
+
+An adapter for the common `Flux` creation, transformation, filtering, and truncation APIs of Reactor Core 3.8.7, published as `reactor:core:1`. `Flux<T>` interoperates with frameworks using Reactive Streams through the standard `std.concurrent.Publisher<T>`.
