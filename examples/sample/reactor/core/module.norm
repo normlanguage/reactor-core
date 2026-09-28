@@ -1,0 +1,7 @@
+Module module() {
+  return module(
+    name: "sample.reactor.core",
+    version: 1,
+    dependencies: [dependency(repository: "github", name: "reactor.core", version: 4)]
+  )
+}

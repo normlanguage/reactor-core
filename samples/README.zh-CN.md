@@ -10,4 +10,6 @@
 norm run samples/hello.norm
 ```
 
-预期输出：`Hello, norm`。[module.norm](../reactor/core/module.norm) 定义 v3 API，并指定 Reactor Core 3.8.7。
+预期输出：`Hello, norm`。[module.norm](../reactor/core/module.norm) 定义公开 API，并指定 Reactor Core 3.8.7。
+
+[验收示例](../examples/sample/reactor/core/Main.norm)验证 Reactive Streams 的发布者类型投影。

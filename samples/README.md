@@ -10,4 +10,6 @@ From the repository root, run:
 norm run samples/hello.norm
 ```
 
-Expected output: `Hello, norm`. [module.norm](../reactor/core/module.norm) defines the v3 API and pins Reactor Core 3.8.7.
+Expected output: `Hello, norm`. [module.norm](../reactor/core/module.norm) defines the public API and pins Reactor Core 3.8.7.
+
+The [acceptance example](../examples/sample/reactor/core/Main.norm) checks the Reactive Streams publisher type projection.
