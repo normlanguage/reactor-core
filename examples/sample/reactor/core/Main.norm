@@ -2,15 +2,15 @@ package sample.reactor.core
 
 import reactor.core.publisher.Flux
 import reactor.core.publisher.fluxJust
-import std.concurrent.Publisher
+import java.base.time.durationOfSeconds
 
-Publisher<String>? notification() {
-  Flux<String>? stream = fluxJust<String>(arg0: "Norm event")
-  return stream
+Flux<String>? notification() {
+  return fluxJust<String>(arg0: "Norm event")
 }
 
 Void main() {
-  if notification() != null {
-    printLine("Reactive Streams publisher ready")
+  Flux<String>? stream = notification()
+  if stream != null {
+    printLine(stream.blockLast(durationOfSeconds(2)) ?? "")
   }
 }
