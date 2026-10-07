@@ -1,14 +1,14 @@
 import reactor.core.publisher.Flux
 import reactor.core.publisher.fluxJust
-import std.time.duration
+import java.base.time.durationOfSeconds
 
 main() {
-  Flux<String?> stream = fluxJust<String>(arg0: "norm")!!
-  Flux<String?> selected = stream.filter((value) { value == "norm" })!!
-  Flux<String?> mapped = selected.map<String>((value) { "Hello, " + value!! })!!
-  printLine(mapped.blockLast(duration(seconds: 2, nanoseconds: 0))!!)
+  Flux<String> stream = fluxJust<String>(arg0: "norm")!!
+  Flux<String> selected = stream.filter((value) { value == "norm" })!!
+  Flux<String> mapped = selected.map<String>((value) { "Hello, " + value!! })!!
+  printLine(mapped.blockLast(durationOfSeconds(2))!!)
 }
 
 Module module() {
-  module(dependencies: [dependency(repository: "github", name: "reactor.core", version: 4)])
+  module(dependencies: [dependency(repository: "norm", name: "java.base", version: 1), dependency(repository: "github", name: "reactor.core", version: 5)])
 }
