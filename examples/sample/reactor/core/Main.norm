@@ -4,8 +4,8 @@ import reactor.core.publisher.Flux
 import reactor.core.publisher.fluxJust
 import std.concurrent.Publisher
 
-Publisher<String?>? notification() {
-  Flux<String?>? stream = fluxJust<String>(arg0: "Norm event")
+Publisher<String>? notification() {
+  Flux<String>? stream = fluxJust<String>(arg0: "Norm event")
   return stream
 }
 
