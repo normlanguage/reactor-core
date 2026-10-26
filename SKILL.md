@@ -1,6 +1,6 @@
 # reactor.core Skill
 
-Use this skill to work with Norm module `reactor.core` version 5. Use only declarations listed below.
+Use this skill to work with Norm module `reactor.core` version 6. Use only declarations listed below.
 
 ## `reactor.core`
 
