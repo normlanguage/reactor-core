@@ -10,5 +10,5 @@ main() {
 }
 
 Module module() {
-  module(dependencies: [dependency(repository: "norm", name: "java.base", version: 1), dependency(repository: "github", name: "reactor.core", version: 6)])
+  module(dependencies: [dependency(repository: "norm", name: "java.base", version: 1), dependency(repository: "github", name: "reactor.core", version: 7)])
 }
